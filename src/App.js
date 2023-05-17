@@ -14,6 +14,8 @@ import circle from './media/circle.svg';
 import lightning from './media/lightning.svg';
 import line from './media/line.svg';
 
+import ContactForm from './ContactForm';
+
 function App() {
 
   useEffect(() => {
@@ -171,13 +173,7 @@ function App() {
                 </div>
               </div>
               <div className="right-contact">
-                <form action="">
-                  <input type="text" name="" className="form-input-field f-input" placeholder="Your name" />
-                  <input type="text" name="" className="form-input-field f-input" placeholder="Your E-Mail" />
-                  <input type="text" name="" className="form-input-field f-input" placeholder="Your Pronouns" />
-                  <textarea name="" className="text-area-form-input f-input" placeholder="How can I help you?" />
-                  <input type="button" value="Get in touch" className="primary-button a-button" />
-                </form>
+                <ContactForm />
               </div>
             </div>
           </div>
