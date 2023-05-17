@@ -9,6 +9,10 @@ import arrowRight from './media/arrow-right.svg';
 import file from './media/file.svg';
 import tictactoe from './media/tictactoe.svg';
 
+import star from './media/star.svg';
+import circle from './media/circle.svg';
+import lightning from './media/lightning.svg';
+import line from './media/line.svg';
 
 function App() {
 
@@ -57,6 +61,10 @@ function App() {
             </nav>
           </header>
           <section className="hero">
+            <img className="line" src={line} alt="" />
+            <img className="star" src={star} alt="" />
+            <img className="circle" src={circle} alt="" />
+            <img className="lightning" src={lightning} alt="" />
             <div className="hero-left">
               <h3>Hi, my name is Lennard</h3>
               <h1>I'm a Student &amp;<br /> Web Developer</h1>
@@ -131,7 +139,7 @@ function App() {
                 <h3>Eye Tracker</h3>
                 <p>A JavaScript mouse tracker, with the visuals of eyeballs. Yuck. But it's creative.</p>
                 <div className="link-project">
-                  <a href="">See more <img src={arrowRight} alt="" /></a>
+                  <a href="https://github.com/lennardrecke/js_eyetracker">See more <img src={arrowRight} alt="" /></a>
                 </div> 
               </div>
               <div className="project-card">
@@ -139,7 +147,7 @@ function App() {
                 <h3>Timer</h3>
                 <p>A JavaScript Countdown Timer, created as a University Kick-Off Project.</p>
                 <div className="link-project">
-                  <a href="">See more <img src={arrowRight} alt="" /></a>
+                  <a href="https://github.com/lennardrecke/js_timer">See more <img src={arrowRight} alt="" /></a>
                 </div> 
               </div>
               <div className="project-card">
@@ -147,28 +155,30 @@ function App() {
                 <h3>Tic Tac Toe</h3>
                 <p>A C++ Tic Tac Toe Game showing the understanding of programming.</p>
                 <div className="link-project">
-                  <a href="">See more <img src={arrowRight} alt="" /></a>
+                  <a href="https://github.com/lennardrecke/TicTacToeGame">See more <img src={arrowRight} alt="" /></a>
                 </div> 
               </div>
             </div>
           </section>
           <div className="contact" id="contact">
-            <div className="left-contact">
-              <h1>Be kind and say hi.</h1>
-              <p>I usually don't bite. But to be sure hit me up with an E-Mail so we can chat.</p>
-              <p className="subtext">E-Mail me at:</p>
-              <div className="email-link">
-                <a href="mailto:lennard.recke@icloud.com" className="mail">lennard.recke@icloud.com</a>
+            <div className="contact-container">
+              <div className="left-contact">
+                <h1>Be kind and say hi.</h1>
+                <p>I usually don't bite. But to be sure hit me up with an E-Mail so we can chat.</p>
+                <p className="subtext">E-Mail me at:</p>
+                <div className="email-link">
+                  <a href="mailto:lennard.recke@icloud.com" className="mail">lennard.recke@icloud.com</a>
+                </div>
               </div>
-            </div>
-            <div className="right-contact">
-              <form action="">
-                <input type="text" name="" className="form-input-field f-input" placeholder="Your name" />
-                <input type="text" name="" className="form-input-field f-input" placeholder="Your E-Mail" />
-                <input type="text" name="" className="form-input-field f-input" placeholder="Your Pronouns" />
-                <textarea name="" className="text-area-form-input f-input" placeholder="How can I help you?" />
-                <input type="button" value="Get in touch" className="primary-button a-button" />
-              </form>
+              <div className="right-contact">
+                <form action="">
+                  <input type="text" name="" className="form-input-field f-input" placeholder="Your name" />
+                  <input type="text" name="" className="form-input-field f-input" placeholder="Your E-Mail" />
+                  <input type="text" name="" className="form-input-field f-input" placeholder="Your Pronouns" />
+                  <textarea name="" className="text-area-form-input f-input" placeholder="How can I help you?" />
+                  <input type="button" value="Get in touch" className="primary-button a-button" />
+                </form>
+              </div>
             </div>
           </div>
         </div>

@@ -173,6 +173,41 @@ nav {
   border-bottom: 5px solid black;
 }
 
+.line {
+  width: auto;
+  height: 50%;
+  position: absolute;
+  left: 5%;
+  bottom: 10%;
+  transform: rotate(20deg);
+}
+
+.star {
+  width: 10%;
+  height: auto;
+  position: absolute;
+  bottom: 10%;
+}
+
+.circle {
+  width: 7%;
+  height: auto;
+  position: absolute;
+  left: 30%;
+  top: 15%;
+  z-index: 0;
+}
+
+.lightning {
+  width: 4%;
+  height: auto;
+  position: absolute;
+  right: 30%;
+  top: 15%;
+  z-index: 11;
+  transform: rotate(-20deg);
+}
+
 .hero h1 {
   font-size: 48px;
   line-height: 1.2;
@@ -189,6 +224,11 @@ nav {
 
 .hero-left {
   text-align: left;
+  z-index: 10;
+}
+
+.hero-right {
+    z-index: 10;
 }
 
 .buttons {
@@ -231,6 +271,22 @@ nav {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
+  .star {
+    display: none;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .circle {
+    display: none;
+  }
+
+  .lightning {
+    display: none;
+  }
+
   .hero {
     flex-direction: column;
     height: auto;
@@ -492,7 +548,7 @@ nav {
 /* My Work styles */
 
 .my-work {
-  height: 90vh;
+  height: 100%;
 }
 
 .my-work h1 {
@@ -599,7 +655,6 @@ nav {
   }
 }
 
-/*Contact Styles*/
 /* Contact styles */
 
 .f-input {
@@ -670,11 +725,7 @@ nav {
 }
 
 .contact {
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
   margin-top: 60px;
-  display: flex;
   margin-left: auto;
   margin-right: auto;
   padding-left: 24px;
@@ -682,11 +733,21 @@ nav {
   padding-top: 70px;
   padding-bottom: 70px;
   background-color: #f6ca44;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+}
+
+.contact-container {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1248px;
+  display: flex;
 }
 
 .left-contact {
-  flex: 0 0 100%;
-  text-align: center;
+  flex: 0 0 50%;
+  text-align: left;
 }
 
 .left-contact p {
@@ -718,7 +779,7 @@ nav {
 
 .right-contact {
   text-align: center;
-  flex: 0 0 100%;
+  flex: 0 0 50%;
 }
 
 /* Responsive Styles */
@@ -731,6 +792,7 @@ nav {
 
   .left-contact,
   .right-contact {
+    text-align: center;
     flex: 0 0 100%;
   }
 
@@ -738,5 +800,11 @@ nav {
   .right-contact p {
     max-width: 100%;
     text-align: center;
+  }
+  
+  .email-link {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 18px;
   }
 }
