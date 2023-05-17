@@ -58,10 +58,10 @@ function App() {
           </header>
           <section className="hero">
             <div className="hero-left">
-              <p>Hi, my name is Lennard</p>
+              <h3>Hi, my name is Lennard</h3>
               <h1>I'm a Student &amp;<br /> Web Developer</h1>
-              <p>I'm a young and creative individual with boundless energy.</p>
-              <p>Passionate about turning ideas into reality</p>
+              <h3>I'm a young and creative individual with boundless energy.</h3>
+              <h3>Passionate about turning ideas into reality</h3>
               <div className="buttons">
                 <a className="primary-button a-button" href="#contact">Get in touch</a>
               </div>
