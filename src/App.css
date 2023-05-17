@@ -136,18 +136,10 @@ nav {
   }
   
   nav {
-    padding-left: 12px;
-    padding-right: 12px;
+    display: none;
   }
   
   .link {
-    font-size: 20px;
-  }
-  .navigation {
-    margin: auto;
-  }
-
-  .navigation a {
     font-size: 20px;
   }
 }
@@ -242,7 +234,7 @@ nav {
   .hero {
     flex-direction: column;
     height: auto;
-    padding: 10px;
+    padding: 20px;
   }
 
   .hero img {
