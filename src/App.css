@@ -339,9 +339,18 @@ nav {
 
   .buttons {
     padding-top: 16px;
+    flex-direction: column;
+    gap: 10px;
   }
 
   .primary-button {
+    height: 44px;
+    font-size: 14px;
+    line-height: 44px;
+    padding: 0 24px;
+  }
+
+  .secondary-button {
     height: 44px;
     font-size: 14px;
     line-height: 44px;
