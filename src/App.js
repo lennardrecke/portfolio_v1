@@ -15,6 +15,7 @@ import lightning from './media/lightning.svg';
 import line from './media/line.svg';
 
 import ContactForm from './ContactForm';
+import resume from './files/resume.pdf';
 
 function App() {
 
@@ -74,6 +75,7 @@ function App() {
               <h3>Passionate about turning ideas into reality</h3>
               <div className="buttons">
                 <a className="primary-button a-button" href="#contact">Get in touch</a>
+                <a className="secondary-button a-button" href={resume} target="_blank">Resume</a>
               </div>
             </div>
             <div className="hero-right">
