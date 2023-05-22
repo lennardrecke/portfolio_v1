@@ -75,7 +75,7 @@ function App() {
               <h3>Passionate about turning ideas into reality</h3>
               <div className="buttons">
                 <a className="primary-button a-button" href="#contact">Get in touch</a>
-                <a className="secondary-button a-button" href={resume} target="_blank">Resume</a>
+                <a className="secondary-button a-button" href={resume} target="_blank">My Resume</a>
               </div>
             </div>
             <div className="hero-right">

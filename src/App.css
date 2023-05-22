@@ -299,6 +299,11 @@ nav {
   margin-top: 10px;
 }
 
+.secondary-button.links-page {
+  width: 200px;
+  margin-top: 10px;
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
   .star {
@@ -361,6 +366,11 @@ nav {
     width: 160px;
     margin-top: 8px;
   }
+
+  .secondary-button.links-page {
+    width: 160px;
+    margin-top: 8px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -384,6 +394,21 @@ nav {
   }
 
   .primary-button.links-page {
+    width: 140px;
+    margin-top: 6px;
+  }
+
+  .secondary-button {
+    height: 60px;
+    font-size: 20px;
+    width: 100%;
+    line-height: 40px;
+    padding: 10px 20px;
+    text-align: center;
+    margin: 20px 0 20px 0;
+  }
+
+  .secondary-button.links-page {
     width: 140px;
     margin-top: 6px;
   }
